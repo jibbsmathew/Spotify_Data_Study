@@ -20,6 +20,8 @@ The notebooks in this project require the following libraries:
 - matplotlib
 - spotipy
 - sklearn
+- numpy
+- seaborn
 
 API keys for the Spotify API are required. Sign up for a developer account to obtain the necessary credentials.
 
