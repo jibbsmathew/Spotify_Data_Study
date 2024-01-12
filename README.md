@@ -1,32 +1,36 @@
 # Spotify Song Valence Analysis and Recommendation
 
-This project utilizes the Spotify API to retrieve song data and apply machine learning techniques to analyze valence and generate song recommendations.
+This code retrieves data from a Spotify playlist and analyzes the audio features of the tracks using the Spotify API and Python.
 
-## Overview
+## Usage
 
-The goal of this project is to:
+1. Register an app on the Spotify for Developers dashboard to obtain a client ID and client secret
+2. Insert your client ID and client secret into the script
+3. Specify the playlist ID of the playlist you want to analyze (the ID is the series of letters and numbers after "/playlist/" in the playlist URL) 
+4. Run the script to retrieve the playlist data and audio features
+5. The data is stored in a Pandas DataFrame for analysis
 
-- Retrieve track metadata and audio features for songs using the Spotify API
-- Analyze the valence (measure of positiveness/happiness) of songs
-- Use K-Means clustering to group songs into valence categories 
-- Train a model on my playlists to recommend songs based on my listening history
+## Analysis Ideas
 
+Once you have the playlist data, here are some ideas for analysis:
 
-## Requirements
+- Visualize audio features like danceability, energy, acousticness, etc. over time or by album/artist
+- Identify audio patterns like tempo, key signatures, etc.
+- Apply machine learning models to cluster songs or make song recommendations
+- Compare audio features between playlists to characterize different genres/moods
+- Build predictive models to classify playlists or suggest additional tracks
 
-The notebooks in this project require the following libraries:
+There is a lot you can do once you have easy access to audio data!
 
-- pandas 
-- matplotlib
-- spotipy
-- sklearn
-- numpy
-- seaborn
+## Libraries Used
 
-API keys for the Spotify API are required. Sign up for a developer account to obtain the necessary credentials.
+- `spotipy` - Wrap the Spotify API
+- `requests` - Make API calls 
+- `pandas` - Store and analyze data
+- `matplotlib` - Visualizations
 
 ## Author
 
-Jibbin Mathew - Github @jibbsmathew
+Jeremy Mathew - Github @jibbsmathew
 
 Let me know if you have any other questions!
